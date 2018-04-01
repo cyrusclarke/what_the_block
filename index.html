@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" -->
+<link rel="stylesheet" href="css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<head>
+<link rel="icon" href="img/favi_wtb.png" type="image/png" sizes="64x64">
+<title>What the Block</title>  
+  <script>
+    function resizeHeaderOnScroll() {
+      const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 120,
+      headerEl = document.getElementById('js-header');   
+      if (distanceY > shrinkOn) {
+        headerEl.classList.add("smaller");
+      } else {
+        headerEl.classList.remove("smaller");
+      }
+  }
+  window.addEventListener('scroll', resizeHeaderOnScroll);
+  </script>
+</head>
+
+<style>
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;max-width:25%;min-width:200px;background:black" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button"><b>X</b></a>
+  <a href="#approach" onclick="w3_close()" class="w3-bar-item w3-button">Approach</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
+  <a href="#people" onclick="w3_close()" class="w3-bar-item w3-button">People</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Values</a>
+
+
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top w3-white">
+  <header id="js-header">
+    <div class="w3-white w3-xlarge" style="max-width:100%; margin:auto">
+    <div class="w3-button w3-padding-32 w3-left" style="padding-left:5%; font-family:Suisse Intl Bold Italic" onclick="w3_open()">☰Menu</div>
+      <div class="w3-button w3-right w3-padding-32" style="padding-right:5%;font-family:Suisse Intl Bold Italic" href="http://cyrus.website">Contact</div>      
+      <div class="logo" id="logo"><img src="Asset_1.png" alt="What the Block"></div>
+    </div>
+  </header>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+  <div class="w3-container w3-padding-32 w3-center" style="margin-top: 500px">  
+      <h1>
+      <span class='light-tagline'>Making </span> <span class="bold-italic-tagline"><a>Blockchain</a></span></br>
+      <span class='light-tagline'>More </span><span class="bold-italic-tagline"><a>Human</a></span>
+      </h1>
+  </div>
+
+
+
+<!-- APPROACH Section -->
+<div class="w3-container w3-center">
+  <div class="quote">
+    <h2>"Where design-thinking</h2><h2>Meets the Blockchain"</h2>
+  </div>
+</div>
+<div class="w3-container w3-padding-32 w3-center">  
+  <div class="w3-top-container" style="padding-top:32px; padding-bottom:32px"><p><a><u>What The Block</u></a> is a platform bringing together the best of design thinking and the blockchain. We help you uncover the real blockchain, and develop meaningful concepts, that not only create a positive impact for your organization,</br> but brings value to society.
+  </div>
+  <a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Learn More</a></p>
+  <hr id="approach">
+</div>
+
+<div class="w3-border-bottom w3-border-white w3-padding-16"></div>  
+  <!-- Approach section-->
+  <!-- Blockchain-->
+<div class="w3-container w3-white">
+    <div class="w3-col s12 l6">
+      <h1 class="w3-padding-32 w3-center">The Blockchain</h1>
+      <div class="w3-content-container"><p>Blockchain is the next evolution of the internet.</p><p>As we shift from an internet of information to an internet of value, distributed ledger technology is poised to re-shape culture, the way economies function, and the ways that politics and governments work.</p><p>It will remove artifical borders and friction, revolutionise health and life-long learning, accelerate the re-invention of work and allow a host of autonomous smart objects to go about their work  – while putting us back in control of our own data and identities.</p></div>
+      <p class="w3-content-container w3-center" style="padding-top:30px; padding-bottom:30px"><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Learn More</a></p>
+    </div>
+    <div class="w3-center">
+      <img class="w3-image w3-large" src="/img/some_image.jpg" alt="Blockchain_Image" max-width="300px">
+    </div>
+</div>
+
+<!-- Quote 1 -->
+<div class="w3-container w3-center">
+  <div class="quote">
+    <h2>"It's <u>not</u> about being first.</h2><h2>It's about being <u>ready</u>"</h2>
+  </div>
+</div>
+
+  <!-- Design Section -->
+<div class="w3-container w3-white" style="margin-top:50px">  
+  <div class="w3-right w3-col s12 l6 w3-padding">
+      <h1 class="w3-center">Design Thinking</h1>
+      <div class="w3-content-container"><p>The promise of decentralized blockchain technology is massive, but bringing this into reality is another matter.</p>At What the Block, we aim to help you understand what this technology really is, and how it can transform your organization.</p><p>Through a carefully developed practice-oriented approach we help you avoid “Technology FOMO” and hone the knowledge and skills you need to take advantage of decentralized technologies and avoid being left behind.</p>
+      </div>
+      <div class="w3-content-container w3-center" style="padding-top:30px;"><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Learn More</a></p></div>
+  </div>
+  <div class="w3-center">
+    <img class="w3-image w3-large" src="/img/some_image.jpg" alt="Blockchain_Image" max-width="300px">
+  </div>
+</div>
+</div>
+
+<hr id="services">
+<div class="w3-border-bottom w3-border-white w3-padding-16"></div>
+  <!-- Services Section -->
+  <div class="w3-center">  
+    <h1 style="margin-top:50px">What We Offer</h1>
+      <p class="w3-top-container">What The Block works with organizations and individuals of all types to demystify the blockchain. We take you from zero-to-hero and help you understand how decentralized technology can help to bring more value to your operations, to your users and to society.</p>
+  </div>
+      <!--foundations/workshops/consulting -->
+    <div class="w3-row-padding w3-center" style="margin-top:42px">
+      <!--foundations-->      
+      <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <img class="w3-image w3-large" src="/img/foundations.png" alt="Foundations" style="max-width:250px">
+      <p class="w3-large">Foundations</p>
+      <div class="small-text">Looking to get started with the Blockchain? We offer short training sessions to introduce the features and benefits of decentralized technologies. You’ll understand how they can add value to your organization, without requiring a Computer Science degree</div>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Learn More</a></p>
+      </div>
+      <!--workshops-->
+      <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <img class="w3-image w3-large" src="/img/workshops.png" alt="Workshops" style="max-width:250px">
+      <p class="w3-large">Workshops</p>
+      <div class="small-text">Our design thinking meets blockchain workshops are focused on getting people and organizations working with the core concepts of blockchain. These hands-on workshops will get you identifying opportunities, crafting ideas and prototyping solutions with real-world applications</div>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Learn More</a></p>
+      </div>
+      <!--advisory-->
+      <div class="w3-third">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <img class="w3-image w3-large" src="/img/advisory.png" alt="Advisory" style="max-width:250px">
+        <p class="w3-large">Advisory</p>
+        <div class="small-text">Ready to get started on a real blockchain project? We advise and accompany organizations and groups looking to integrate blockchain into their operations. Our approach is focused on designing value-maximising systems, helping you design, develop and test initial pilots.</div>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Learn More</a></p>
+      </div>            
+    </div>
+  </div>
+</div>
+
+<!-- People Section -->
+<hr id="people">
+  <!-- About Section -->
+  <div class="w3-center w3-padding-32" id="people">
+    <h1 class="w3-center w3-padding-16">Who We Are</h1>
+    <p class="w3-top-container">What The Block is a multi-disciplinary unit of creatives and strategists connected by a passion to bring the potential of decentralized technologies and new systems to a wider audience. With a collective 40 years experience in the fields of design and innovation, we know what it takes to make change a reality. 
+    </p>
+  </div>
+
+  <div class="w3-row-padding" style="max-width:1200px">
+    <div class="w3-col l3 m6 w3-margin-bottom ">
+      <div class="profile-icons w3-hover-shadow"><img src="/img/cyrus.png" alt="Cyrus" style="width:100%"></div>
+      <h3 class="w3-center"><b>Cyrus Clarke</b></h3>
+      <h4 class="w3-opacity w3-center">Innovation</h4>
+      <div class="small-text">Innovation strategist, designer and blockchain researcher. Formerly the innovation lead at L'Oreal, Cyrus has more than 7 years experience working in the digital and innovation industry. He is a co-founder of blockchain startup SIFT Foundation and founded WTB to help inspire a decentralized future.</div>
+      <p class=w3-center ><button class="w3-button w3-black">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="profile-icons w3-hover-shadow"><img src="/img/john.png" alt="John" style="width:100%"></div>
+      <h3 class="w3-center"><b>John Ferreira</b></h3>
+      <h4 class="w3-opacity w3-center">Design</h4>
+      <div class="small-text">Service and Interaction designer specialising in building systems. John spent 10 years at Samsung, Fjord, and EA Games before becoming a serial entrepreneur. As a founder of WTB and co-founder of SIFT Foundation, he believes in using the blockchain to support free expression.</div>
+      <p class=w3-center ><button class="w3-button w3-black">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="profile-icons w3-hover-shadow"><img src="/img/morten.png" alt="Morten" style="width:100%"></div>
+      <h3 class="w3-center"><b>Morten Bove</b></h3>
+      <h4 class="w3-opacity w3-center">Strategy</h4>
+      <div class="small-text">Experienced Strategist and Ideator with demonstrated entrepreneural skills. Morten has a wealth of experience and a solid track record of counselling in both the private and public sector. A founder of WTB, an infinite learner, ever curious and on an eternal journey exploring technology.</div>
+      <p class=w3-center ><button class="w3-button w3-black">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="profile-icons w3-hover-shadow"><img src="/img/hire_me.png" alt="Dan" style="width:100%"></div>
+      <h3 class="w3-center"><b>We're Hiring</b></h3>
+      <h4 class="w3-opacity w3-center">Join Us</h4>
+      <div class="small-text">What The Block is a multi-disciplinary, collaborative practice and we're always on the lookout for people with the right spirit to join our growing team. If you want to help create a decentralized future, please get in touch!</div><br style="margin-top: 20px">
+      <p class=w3-center ><button class="w3-button w3-black">Contact</button></p>
+    </div>
+  </div>
+
+<div class="w3-border-bottom w3-border-light-grey w3-padding-16"></div>
+
+  <!-- Footer -->
+  <footer class="w3 container w3-row-padding w3-center w3-padding-32">
+    <div class="w3-center">
+       <h1>Want to work with us? <a href="mailto:mail@cyrus.website">Get in Touch:</h1></a>
+       <h2>mail@whattheblock.org</h2>
+       <h2>@whattheblock</h2><p></p>
+    </div>
+      <div class="w3-border-bottom w3-border-light-grey w3-padding-16"></div>
+      <p>Copyright 2018: <a href="http://whattheblock.org">WhatTheBlock.org</a></p>
+  </footer>
+<!--
+ 
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+-->
+<!--
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+-->
+
+  <!-- Pagination 
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  -->
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
