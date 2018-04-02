@@ -98,7 +98,7 @@ header.smaller {
 
 header.smaller #logo {
     width: 80px;
-    height: 75px;
+    height: 62px;
     line-height: 55px;
     font-size: 55px;
     margin-right:auto;
@@ -106,7 +106,7 @@ header.smaller #logo {
 }
 
 header.smaller nav a {
-    line-height: 75px;
+    line-height: 60px;
 }
 
 header #logo {
@@ -116,6 +116,13 @@ header #logo {
     -o-transition: all 0.9s;
     transition: all 0.9s;
 }
+/* smaller logo for mobile */
+@media (max-width: 600px) { 
+    header.smaller #logo {
+        width: 60px;
+    }
+}
+
 
 body{
     margin:1px;
@@ -267,12 +274,30 @@ font-size: 3.5vw;
 margin:10px 0
 }
 
+
+@media only screen and (max-width: 420px) {
+
+   h1 { 
+      font-size: 10.5vw; 
+   }
+
+}
+
+
+
 .light-tagline {
 font-family: "Suisse Intl Regular";
 font-size: 4.5vw;
 margin:10px 0
 }
 
+@media only screen and (max-width: 420px) {
+
+   .light-tagline { 
+      font-size: 7.5vw; 
+   }
+
+}
 
 .bold-italic-tagline {
 font-family: "Suisse Intl Bold Italic";
@@ -282,6 +307,13 @@ margin:10px 0
 
 .bold-italic-tagline :hover {
     background-color: yellow;
+}
+
+@media only screen and (max-width: 420px) {
+
+   .bold-italic-tagline { 
+      font-size: 10.5vw; 
+    }
 }
 
 h2{
@@ -808,7 +840,7 @@ a{
     z-index:1
 }
 .w3-top{
-    top:0px
+    top:0
 }
 .w3-bottom{
     bottom:0
@@ -926,12 +958,22 @@ a{
     text-align: center
 }
 
+@media (max-width: 767px) {
+
+ .w3-top-container{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px
+    }
+}
+
+
 .w3-content-container{
     margin-left:auto;
     margin-right:auto;
     max-width: 600px;
-    padding-left: 40px;
-    padding-right:40px;
+    padding-left: 10px;
+    padding-right:10px;
 }
 .w3-panel{
     margin-top:16px;
@@ -1113,7 +1155,7 @@ a{
     font-size:18px!important
 }
  .w3-xlarge{
-    font-size:24px!important
+    font-size:24px!important;
 }
 .w3-xxlarge{
     font-size:36px!important
@@ -1538,18 +1580,18 @@ a{
 
 @media (max-width: 600px) {
     .logo {
-        max-width: 60%;
+        max-width: 70%;
     }
 }
 
 
 .logo img {
-    margin-top: 50px;
+    margin-top: 40px;
     max-width: 100%;
 }
 
 @media (max-width: 600px) {
-    .logo {
+    .logo img {
         margin-top: 10px;
     }
 }
@@ -1565,4 +1607,34 @@ a{
 .profile-icons {
     max-width: 70%;
     margin:auto
+}
+
+#contact-button {
+   display : none;
+ }
+
+/* Landscape phone to portrait tablet  show the button */
+@media (min-width: 767px) {
+
+ #contact-button{
+   display : block; // or inline-block or inline : which ever is appropriate for you.
+ }
+}
+
+#tagline{ 
+    margin-top: 500px
+}
+
+@media (max-width: 767px) {
+
+ #tagline{
+    margin-top: 360px
+    }
+}
+
+@media (min-width: 767px) {
+
+ #contact{
+    display: none
+    }
 }
